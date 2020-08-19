@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <% @lineItems.each_with_index do |item, i| %>
+    <li class="list-group-item"><img src="<%= item[0].image %>" max-height="80px" width="50px; style="object-fit:cover;";/> <%= item[0].name %><p><%= item[0].description %></p> Qty: <%= @order.line_items[i].quantity %> - <%= humanized_money_with_symbol @order.line_items[i].total_price_cents / 100 %></li>
+  <% end %>
+  <h5>Total: <%= humanized_money_with_symbol @order.total_cents / 100 %></h5>
+  <h5>Email: <%= @order.email %></h5>
+</ul>
