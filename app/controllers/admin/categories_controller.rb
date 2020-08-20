@@ -1,4 +1,5 @@
 class Admin::CategoriesController < ApplicationController
+  http_basic_authenticate_with name: ENV['AUTH_LOGIN'], password: ENV['AUTH_PASSWORD']#, except: :index
 
   def index
     @categories = Category.all
