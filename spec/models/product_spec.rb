@@ -18,7 +18,6 @@ RSpec.describe Product, type: :model do
       it "should return 'Price can't be blank' and 'Price cents is not a number' if theres no price" do
         @category = Category.create(name:'testCategory')
         @product = Product.create(name: 'testProduct', description: 'desc', category_id:Category.find_by(name: 'testCategory').id, quantity: 2, image: '#', price: nil)
-        puts @product.errors.full_messages
         expect(@product.errors.full_messages[0]).to eq "Price cents is not a number"
         expect(@product.errors.full_messages[1]).to eq "Price is not a number"
         expect(@product.errors.full_messages[2]).to eq "Price can't be blank"
