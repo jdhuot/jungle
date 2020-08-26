@@ -1,6 +1,7 @@
 class AboutController < ApplicationController
 
-  def show 
+  # Show about page
+  def show
   end
-  
+
 end

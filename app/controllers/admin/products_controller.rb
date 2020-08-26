@@ -1,12 +1,16 @@
 class Admin::ProductsController < Admin::BaseController
+
+  # Render all products in order of descending ID
   def index
     @products = Product.order(id: :desc).all
   end
 
+  # Used in create new product
   def new
     @product = Product.new
   end
 
+  # Allow admin to create new products
   def create
     @product = Product.new(product_params)
 
@@ -17,6 +21,7 @@ class Admin::ProductsController < Admin::BaseController
     end
   end
 
+  # Allow admin to delete products
   def destroy
     @product = Product.find params[:id]
     @product.destroy
@@ -25,6 +30,7 @@ class Admin::ProductsController < Admin::BaseController
 
   private
 
+  # Securely get form data
   def product_params
     params.require(:product).permit(
       :name,

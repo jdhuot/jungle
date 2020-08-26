@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 
   def new 
-
   end
 
   def create
@@ -26,6 +25,5 @@ class UsersController < ApplicationController
       :password_confirmation
     )
   end
-
 
 end

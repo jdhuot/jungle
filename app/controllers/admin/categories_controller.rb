@@ -1,13 +1,16 @@
 class Admin::CategoriesController < Admin::BaseController
-  
+
+  # Display all categories to admin
   def index
     @categories = Category.all
   end
 
+  # For new categories
   def new
     @category = Category.new
   end
 
+  # Used for admins to create new categories
   def create
     @category = Category.new(category_params)
 
@@ -19,7 +22,8 @@ class Admin::CategoriesController < Admin::BaseController
   end
 
   private
-
+  
+  # Secure form params
   def category_params
     params.require(:category).permit(
       :name
