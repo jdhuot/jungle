@@ -1,5 +1,4 @@
-class Admin::DashboardController < ApplicationController
-  http_basic_authenticate_with name: ENV['AUTH_LOGIN'], password: ENV['AUTH_PASSWORD']#, except: :index
+class Admin::DashboardController < Admin::BaseController
   def show
     @product_count = Product.count
     @category_count = Category.count
