@@ -63,5 +63,26 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-### 
-!['Sample image'](http)
+### Home page
+!['Home'](https://github.com/jdhuot/jungle/blob/master/docs/home.png?raw=true)
+
+### Sold out badge
+!['Sold Out'](https://github.com/jdhuot/jungle/blob/master/docs/sold-out.png?raw=true)
+
+### Admins can view and create product categories
+!['Categories'](https://github.com/jdhuot/jungle/blob/master/docs/categories.png?raw=true)
+
+### Empty cart notice
+!['Empty cart notice'](https://github.com/jdhuot/jungle/blob/master/docs/empty-cart.png?raw=true)
+
+### Signup page
+!['Signup page'](https://github.com/jdhuot/jungle/blob/master/docs/signup.png?raw=true)
+
+### Login page
+!['Login page'](https://github.com/jdhuot/jungle/blob/master/docs/login.png?raw=true)
+
+### Order details
+!['Order details'](https://github.com/jdhuot/jungle/blob/master/docs/order-details.png?raw=true)
+
+### Simple admin authentication 
+!['auth'](https://github.com/jdhuot/jungle/blob/master/docs/auth.png?raw=true)
